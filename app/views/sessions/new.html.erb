@@ -6,8 +6,9 @@
       <div class="form-group">
         <%= f.input :email, input_html: { class: "form-control"} %>
         <%= f.input :password, input_html: { class: "form-control"} %>
+        <%= f.input :remember_me,as: :boolean %>
       </div>
-      <%= f.submit "Submit", class: "btn btn-primary", data: { disable_with: "Submitting..." } %>
+      <%= f.submit "Log in", class: "btn btn-primary", data: { disable_with: "Submitting..." } %>
       <% end %>
     <p>New user? <%= link_to "Sign up now!", signup_path %></p>
   </div>
