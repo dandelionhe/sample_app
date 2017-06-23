@@ -6,6 +6,7 @@
       <div class="form-group">
         <%= f.input :email, input_html: { class: "form-control"} %>
         <%= f.input :password, input_html: { class: "form-control"} %>
+        <%= link_to '(forgot password)',new_password_reset_path %>
         <%= f.input :remember_me,as: :boolean %>
       </div>
       <%= f.submit "Log in", class: "btn btn-primary", data: { disable_with: "Submitting..." } %>
