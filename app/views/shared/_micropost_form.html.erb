@@ -1,0 +1,10 @@
+  <%= simple_form_for @micropost do |f| %>
+  <div class="form-group">
+    <%= f.input :content,as: :text, input_html: { class: "form-control",rows:10} %>
+
+  </div>
+  <%= f.submit "Post", class: "btn btn-primary", data: { disable_with: "Submitting..." } %>
+  <span>
+    <%= f.input :picture,as: :file %>
+  </span>
+  <% end %>

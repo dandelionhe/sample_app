@@ -6,3 +6,12 @@ body {
 .center{
   text-align: center;
 }
+
+.microposts{
+  list-style: none;
+  padding:0;
+  li{
+    padding:10px 0;
+    border-top:1px solid;
+  }
+}
